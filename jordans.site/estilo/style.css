@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+
+
+
+:root{
+    --cor01:#0000FF;
+    --cor02:#0000CC;
+    --cor03:#000099;
+    --cor04:#000066;
+    --cor05:#000033;
+
+    --font-principal: "Bebas Neue", sans-serif;
+    --font-padrao: arial, verdana, sans-serif;
+    --font-logo:"Luxurious Script", cursive;
+
+
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    font-family: var(--font-padrao);
+}
+header{
+    height: 90px;
+    margin: auto;
+    background-color: #000000;
+}
+header > h1{
+    font-size: 4em;
+    font-family: var(--font-logo);
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+nav{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+nav > a{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    font-family: var(--font-principal);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: normal;
+    transition: transform 0.3s ease-in-out; 
+}
+nav > a:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+    
+}
+main{
+    padding: 20px;
+    margin: auto;
+    background-color: var(--cor01);
+    max-width: 700px;
+    min-width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 0px 0px 20px 20px;
+
+}
+main > section > h1{
+    color: whitesmoke;
+    font-family: var(--font-principal);
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+}
+main > section > article > p{
+    color: white;
+}
+section > article > aside > h2{
+    font-family: var(--font-principal);
+    font-weight: lighter;
+}
+.card-1{
+    text-align: center;
+    padding: 20px;
+}
+.card-1 > img{
+    display: inline-block;
+    max-width: 300px;
+    min-width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    
+}
+.card-1 > img:hover{
+    transform: scale(1.05);
+}
+.card-1 > p{
+    text-align: justify;
+    font-size: 12px;
+    padding: 20px;
+}
+.card-video{
+    color: white;
+    background-color: white;
+    margin-top: 40px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 20px;
+}
+.card-video > iframe{
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    
+}
+.card-video > h2 {
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 20px;
+    background-color: var(--cor02);
+    width: 100%;
+}
+.card-video > p{
+    padding: 10px;
+    color: black;
+    text-align: justify;
+    margin: 20px;
+    font-size: 12px;
+}
+footer{
+    margin-top: 30px;
+    background-color:var(--cor04);
+}
+footer > p{
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    font-family: var(--font-principal);
+}

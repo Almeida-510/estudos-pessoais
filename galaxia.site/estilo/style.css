@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Kumar+One&family=Kumar+One+Outline&display=swap');
+
+
+:root{
+    --cor01:#0000FF;
+    --cor02:#0000CC;
+    --cor03:#000099;
+    --cor04:#000066;
+    --cor05:#000033;
+
+    --font-face00:"BBH Sans Bartle", sans-serif;
+    --font-face01: "Kumar One", serif;
+    --font-face02:"Kumar One Outline", system-ui;
+    --font-padrao:"Poppins", sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+}
+header{
+    display: flex;
+    height: 90px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+header > h1 > span{
+    font-size: 2em;
+    
+}
+header > h1{
+    font-size: 0.9em;
+    font-family: var(--font-face00);
+    font-weight: 500;
+    margin-left: 10px;
+    color:white ;
+    text-shadow:0px 2px 5px var(--cor03);
+}
+header > nav > a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: 300;
+    padding-left:10px;
+    padding-right: 10px;
+    background-color: #692BAA;
+    border-radius: 20px;
+    padding: 7px;
+    transition: transform 0.3s ease-in-out;
+}
+header > nav > a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+main{
+    margin: auto;
+}
+article.banner-galaxy{
+    padding: 10px;
+    height: 400px;
+    background-image: url("/galaxia.site/img/back-galaxy.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+article.banner-galaxy > p{
+    display: block;
+    font-size: 25px;
+    font-family: var(--font-face00);
+    padding: 10px;
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    padding-top: 60px;
+    text-shadow: 1px 4px 10px rgb(4, 4, 4);
+    transition: transform 0.3s ease-in-out;
+}
+article.banner-galaxy > p > span{
+    color: #692BAA;
+}
+article.banner-galaxy > p:hover{
+    transform: scale(1.1);
+}
+section > article.card-planet{
+    display: block;
+    max-width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-image: url("/galaxia.site/img/fundo-planeta-terra.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid #692BAA;
+    box-shadow: 1px 5px 20px #682baa36 ;
+}
+article.card-planet > p{
+    padding-top: 20px;
+    color: white;
+    font-family: var(--font-face00);
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.677);
+}
+aside.button-planet{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+aside.button-planet > a{
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    background-color: #692BAA;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+aside.button-planet > a > img{
+    width: 30px;
+    padding-top: 1px;
+}
+aside.button-planet > a:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+article.card-star{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top:30px;
+    background-image: url("/galaxia.site/img/fonte-de-galaxia-de-estilo-fantasia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #692BAA;
+    border-radius: 20px;
+    box-shadow: 1px 5px 20px #682baa36 ;
+}
+article.card-star > p {
+    color: white;
+    font-family: var(--font-face00);
+    font-size: 15px;
+    text-align: center;
+    padding-top:20px;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.532);
+}
+
+aside.button-star{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+aside.button-star > a{
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    background-color: #692BAA;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+aside.button-star > a > img{
+    width: 30px;
+    padding-top: 1px;
+}
+aside.button-star > a:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+footer{
+    height: 400px;
+}

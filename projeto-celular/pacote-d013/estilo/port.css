@@ -28,18 +28,37 @@ section{
     width: 311px;
 }
 #redes-sociais{
+    display: block;
     padding: 10px;
     text-align: right;
 }
+#redes-sociais > a{
+    display: block;
+    
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
 img{
-    height: 50px;
+    height: 45px;
     border-radius: 100%;
-    margin-top: 5px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.596);
+    box-sizing: border-box;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#redes-sociais > a > img:hover{
+    border: 1px solid white;
 }
 iframe{
+    border-radius: px;
     position: relative;
-    top: 70px;
-    left: 22px;
+    top: 67px;
+    left: 18px;
     height: 399px;
-    width: 219px;
+    width: 226px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }

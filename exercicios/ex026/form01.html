@@ -6,16 +6,65 @@
     <title>Formularios-exercicio</title>
     <style>
         *{
+            margin: 0;
+            padding: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+            position: relative;
+            top: 100px;
+            font-size: 3em;
+        }
+        main{
+            height: 100vh;
+            position: relative;
+        }
+        form{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            height: 180px;
+            width: 400px;
+            padding: 10px;
+            background-color: rgba(0, 0, 255, 0.123);
+            border: 1px solid rgba(0, 0, 255, 0.422);
+            border-radius: 20px;
+        }
+        form > p{
+            padding: 10px;
+            text-align: center;
+        }
+        input{
+            padding: 2px;
+            border: none;
+            border-radius: 5px;
+            height: 25px;
+        }
+
+
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulario</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p>
-        <p><input type="submit" value="Enviar"></p>
-    </form>
+    <main>
+        <h1>Meu primeiro formulario</h1>
+        <form action="cadastro.js" autocomplete="off">
+            <p><label for="inome">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="inome" placeholder="Nome"></p>
+            <p><label for="isobrenome">Sobrenome:</label>
+                <br>
+                <input type="text" name="sobrenome" id="isobrenome" placeholder="sobrenome"> </p>
+            <p><input type="submit" value="Enviar"></p>
+            <p id="resposta"></p>
+        </form>
+        
+    </main>
 </body>
 </html>

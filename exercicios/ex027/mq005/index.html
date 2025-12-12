@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css" media="all">
-    <title>MENU RESPONSIVO</title>
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção-1</a></li>
+                <li><a href="#">Opção-2</a></li>
+                <li><a href="#">Opção-3</a></li>
+                <li><a href="#">Opção-4</a></li>
+                <li><a href="#">Opção-5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media querys</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores nisi officia omnis eius dicta porro, architecto perspiciatis sapiente iste provident perferendis libero repellendus veniam temporibus! Tempore, nam id. Fuga, porro? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, beatae a nobis in exercitationem tenetur amet! Exercitationem qui excepturi fugit dolores voluptatem quam ab aliquam, alias architecto expedita corporis reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quia officiis odio amet aliquam excepturi harum quam iste magni atque. Maxime molestias perferendis nulla voluptate distinctio accusamus pariatur commodi consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo, voluptates obcaecati, iure veniam magni est esse nesciunt ducimus cupiditate ea! Nemo voluptates cupiditate veniam et recusandae laudantium explicabo sequi.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            let ativacaoMenu = itens.style.display 
+           if(ativacaoMenu === "block"){
+            itens.style.display = 'none'
+           }else{
+            itens.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
